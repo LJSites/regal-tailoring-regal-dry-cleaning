@@ -1,107 +1,231 @@
-<!doctype html>
-<!-- laundry · classic-navy · hero-layout 1 · svc-layout 0 · generated from live Google Places data for Regal Tailoring &amp; Regal Dry Cleaning -->
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Regal Tailoring &amp; Regal Dry Cleaning — Laundry, Long Beach</title>
-<meta name="description" content="Regal Tailoring &amp; Regal Dry Cleaning — Laundry in Long Beach.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<!-- cleaners · regal-emerald · hero-layout 6 · svc-layout 6 -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Regal Tailoring & Dry Cleaning — Malena's Atelier</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f5f1ea;--surface:#fff;--ink:#101a36;--mut:#56607a;--acc:#9c7a25;--line:#d8d2c2}
+:root{
+  --emerald:#0d3e2e;
+  --emerald-dk:#062619;
+  --gold:#c89c3f;
+  --gold-soft:#e3c474;
+  --ivory:#faf3e0;
+  --cream:#f0e6cc;
+  --ink:#0a1f17;
+  --mute:#7a6f5a;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Lora',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.62;-webkit-font-smoothing:antialiased}
-.disp{font-family:'Oswald',sans-serif}
-a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
-img{max-width:100%;display:block}
-.wrap{max-width:1120px;margin:0 auto;padding:0 26px}
-header{padding:16px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:30}
-header .row{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-family:'Oswald',sans-serif;font-weight:700;font-size:21px;letter-spacing:-.01em;color:var(--ink)}
-nav a{margin-left:20px;color:var(--mut);font-size:13.5px;font-weight:500}nav a:hover{color:var(--acc);text-decoration:none}
-.callbtn{display:inline-flex;align-items:center;gap:7px;background:var(--acc);color:#fff;padding:9px 16px;border-radius:8px;font-weight:600;font-size:13.5px;margin-left:20px}
-.callbtn:hover{filter:brightness(.92);text-decoration:none;color:#fff}
-.hero{padding:72px 0 60px}
-.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
-.kicker{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:18px}
-h1{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(40px,6.2vw,72px);line-height:1.02;letter-spacing:-.025em;margin-bottom:20px}
-.lede{font-size:18px;color:var(--mut);max-width:480px;margin-bottom:28px}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:8px;font-weight:600;font-size:14px;border:1.5px solid var(--ink);color:var(--ink);background:transparent}
-.btn:hover{background:var(--ink);color:var(--bg);text-decoration:none}
-.btn.solid{background:var(--acc);border-color:var(--acc);color:#fff}
-.btn.solid:hover{filter:brightness(.92);color:#fff}
-.hero-img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px;order:-1;}
-.section{padding:62px 0;border-top:1px solid var(--line)}
-.kick{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
-h2{font-family:'Oswald',sans-serif;font-weight:700;font-size:34px;letter-spacing:-.02em;margin-bottom:8px}
+html,body{background:var(--emerald);color:var(--ivory);font-family:'Inter',sans-serif;font-weight:300;line-height:1.6}
+.cg{font-family:'Cormorant Garamond',serif}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
 
-.svcs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
-.svcs .svc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
-.svc-rows{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
-.svc-rows .svc-row{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px 26px;display:flex;align-items:baseline;gap:14px}
-.svc-list{margin-top:30px;border-top:1px solid var(--line)}
-.svc-list .svc-line{display:flex;align-items:baseline;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
-.snum{font-family:'Oswald',sans-serif;font-size:13px;color:var(--acc);font-weight:600;letter-spacing:.08em}
-.svcs .svc h3,.svc-rows .svc-row h3,.svc-list .svc-line h3{font-family:'Oswald',sans-serif;font-weight:600;font-size:19px;margin-top:10px;letter-spacing:-.01em}
+/* gold trim top */
+.trim{height:6px;background:linear-gradient(90deg,var(--gold) 0%,var(--gold-soft) 50%,var(--gold) 100%)}
 
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
-.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
-.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
-.q{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px}
-.q p{font-family:'Oswald',sans-serif;font-size:18px;line-height:1.5;margin-bottom:12px}
-.q .who{font-size:13px;font-weight:600;color:var(--acc)}
-.visit{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:28px}
-.visit .info{padding:30px 32px;background:var(--surface)}
-.hrow{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}
-.hrow:last-child{border-bottom:0}.hd{font-weight:600}.ht{color:var(--mut)}
-.visit iframe{width:100%;height:100%;min-height:360px;border:0}
-.contact-line{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
-footer{background:var(--ink);color:var(--bg);padding:32px 0 46px;border-top:1px solid var(--line)}
-footer .fbrand{font-family:'Oswald',sans-serif;font-weight:700;font-size:18px}
-footer .credit{margin-top:10px;font-size:13px;opacity:.82}footer a{color:var(--acc)}
-@media(max-width:800px){.hero .grid{grid-template-columns:1fr}.hero-img{order:0;aspect-ratio:16/10}.svcs{grid-template-columns:1fr 1fr}.svc-rows{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.quotes,.visit{grid-template-columns:1fr}nav{display:none}.visit iframe{min-height:280px}}
+nav{padding:22px 0;background:var(--emerald-dk);border-bottom:1px solid rgba(200,156,63,.25)}
+nav .row{display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:28px;letter-spacing:.5px;color:var(--gold)}
+.brand em{font-style:italic}
+.brand small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:10px;letter-spacing:6px;color:var(--ivory);margin-top:-2px;text-transform:uppercase}
+.nlinks{display:flex;gap:32px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:var(--ivory)}
+.nlinks a{color:inherit;text-decoration:none}
+.nlinks a:hover{color:var(--gold)}
+.cta{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--emerald);background:var(--gold);padding:10px 24px;border-radius:0;text-decoration:none;font-weight:600;letter-spacing:.5px}
+
+/* hero */
+.hero{padding:100px 0;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 80% 20%, rgba(200,156,63,.12), transparent 45%),
+  radial-gradient(circle at 20% 80%, rgba(200,156,63,.05), transparent 45%)}
+.hero .inner{position:relative;max-width:900px;margin:0 auto;text-align:center}
+.crest{font-family:'Cormorant Garamond',serif;font-size:80px;color:var(--gold);line-height:1;margin-bottom:24px}
+.pre{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;font-weight:600}
+.hero h1{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(58px,9vw,128px);line-height:.95;letter-spacing:-2px;color:var(--ivory)}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:400}
+.hero .lede{margin-top:30px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px;color:#d4cdb0;max-width:680px;margin-left:auto;margin-right:auto;line-height:1.5}
+.hero .crest-row{margin-top:50px;display:flex;justify-content:center;align-items:center;gap:24px}
+.hero .crest-row span{color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:24px}
+.hero .crest-row b{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px;color:var(--ivory);font-weight:400;letter-spacing:1px}
+
+/* malena spotlight */
+.malena{padding:100px 0;background:var(--cream);color:var(--ink)}
+.malena .grid{display:grid;grid-template-columns:1fr 1.3fr;gap:80px;align-items:center}
+.malena .photo{aspect-ratio:3/4;background:var(--emerald);display:flex;align-items:center;justify-content:center;color:var(--gold);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:200px;font-style:italic;line-height:.85;letter-spacing:-4px;border:8px solid var(--ivory);box-shadow:0 30px 60px rgba(13,62,46,.25)}
+.malena .pre{color:var(--gold);font-style:italic;font-size:18px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
+.malena h2{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:64px;line-height:.95;letter-spacing:-1.5px;color:var(--emerald);margin-top:8px}
+.malena h2 em{font-style:italic;color:var(--gold)}
+.malena p{margin-top:18px;font-family:'Cormorant Garamond',serif;font-size:19px;color:#2a1f15;line-height:1.7}
+.malena p + p{margin-top:14px}
+.malena .pull{margin-top:30px;padding:24px 26px;background:#fff;border-left:4px solid var(--gold);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:var(--emerald);line-height:1.55}
+.malena .pull b{display:block;font-family:'Inter',sans-serif;font-style:normal;font-size:12px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-top:14px;font-weight:700}
+
+/* services — ledger */
+.svc{padding:100px 0;background:var(--emerald-dk)}
+.svc .head{text-align:center;margin-bottom:60px}
+.svc .pre{color:var(--gold)}
+.svc h2{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:64px;letter-spacing:-1.5px;color:var(--ivory);margin-top:8px}
+.svc h2 em{font-style:italic;color:var(--gold)}
+.ledger{background:var(--cream);color:var(--ink);max-width:900px;margin:0 auto;padding:60px 60px;border:1px solid var(--gold);position:relative}
+.ledger::before,.ledger::after{content:"";position:absolute;inset:6px;border:1px solid var(--emerald);pointer-events:none}
+.ledger h3{font-family:'Cormorant Garamond',serif;font-weight:700;font-style:italic;font-size:36px;color:var(--emerald);text-align:center;letter-spacing:.5px;margin:0 0 20px}
+.ledger h3::before{content:"❦ "}
+.ledger h3::after{content:" ❦"}
+.ledger h3 b{font-weight:700;font-style:normal}
+.ledger .row{display:flex;justify-content:space-between;padding:14px 0;gap:20px;align-items:start;border-bottom:1px dotted var(--gold)}
+.ledger .row:last-of-type{border-bottom:none}
+.ledger .row .name{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:20px;color:var(--emerald);font-style:italic}
+.ledger .row .desc{font-family:'Inter',sans-serif;font-size:13px;color:var(--mute);margin-top:2px}
+.ledger .row .price{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:22px;color:var(--gold);align-self:center}
+
+/* praise */
+.praise{padding:100px 0;background:var(--emerald)}
+.praise .head{text-align:center;margin-bottom:50px}
+.praise .pre{color:var(--gold)}
+.praise h2{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:60px;color:var(--ivory);letter-spacing:-1.5px;margin-top:8px}
+.praise h2 em{font-style:italic;color:var(--gold)}
+.pgrid{display:grid;grid-template-columns:1fr;gap:30px;max-width:760px;margin:0 auto}
+.pcard{padding:36px 40px;background:rgba(200,156,63,.06);border:1px solid var(--gold);border-radius:0;text-align:center}
+.pcard .star{color:var(--gold);letter-spacing:4px;font-size:18px}
+.pcard .t{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:26px;color:var(--ivory);margin-top:16px;line-height:1.45}
+.pcard .who{margin-top:24px;padding-top:18px;border-top:1px solid var(--gold);font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;font-weight:600}
+
+/* visit */
+.visit{padding:100px 0;background:var(--cream);color:var(--ink)}
+.visit .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
+.visit .pre{color:var(--gold);font-style:italic;font-size:18px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
+.visit h2{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:60px;color:var(--emerald);letter-spacing:-1.5px;margin-top:8px}
+.visit h2 em{font-style:italic;color:var(--gold)}
+.visit .det{margin-top:32px;display:grid;gap:20px}
+.visit .row{padding:0;display:grid;grid-template-columns:130px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--gold);align-items:start}
+.visit .row b{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;font-weight:700;align-self:center}
+.visit .row a{color:var(--emerald);text-decoration:none;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px}
+.visit .row span{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--ink)}
+.hourcard{background:var(--emerald);color:var(--ivory);padding:50px 40px;border:6px solid var(--gold)}
+.hourcard h3{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:42px;color:var(--gold);text-align:center;margin-bottom:24px}
+.hr{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px dotted rgba(200,156,63,.3);font-family:'Cormorant Garamond',serif;font-size:18px}
+.hr:last-child{border-bottom:none}
+.hr b{color:var(--ivory);font-weight:600}
+.hr span{color:var(--gold);font-style:italic}
+.hr.cl span{color:#8a8166}
+
+footer{padding:60px 0 40px;text-align:center;background:var(--emerald-dk);color:var(--ivory)}
+footer .b{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:42px;color:var(--gold);letter-spacing:-.5px}
+footer .b em{font-style:italic}
+footer .b small{display:block;font-family:'Inter',sans-serif;font-size:10px;letter-spacing:5px;color:var(--ivory);font-weight:500;margin-top:4px;text-transform:uppercase}
+footer .det{margin-top:18px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#d4cdb0}
+footer .det a{color:var(--gold)}
+footer .credit{margin-top:32px;padding-top:22px;border-top:1px solid #0d3e2e;font-size:12px;color:#7a8c80}
+footer .credit a{color:var(--gold)}
+
+@media (max-width:880px){
+  .malena .grid,.visit .grid{grid-template-columns:1fr;gap:40px}
+  .nlinks{display:none}
+  .hero h1{font-size:50px}
+  .ledger{padding:36px 28px}
+}
 </style></head><body>
-<header><div class="wrap row">
-  <div class="brand">Regal Tailoring &amp; Regal Dry Cleaning</div>
-  <div style="display:flex;align-items:center"><nav><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></nav><a class="callbtn" href="tel:+15624342131">Call (562) 434-2131</a></div>
-</div></header>
 
-<section class="hero"><div class="wrap"><div class="grid">
-  <div>
-    <span class="kicker">Crisp, clean, on time</span>
-    <h1 class="disp">Clean, pressed,<br>back to you.</h1>
-    <p class="lede">A neighborhood laundry that's earned its regulars the honest way — by being good at what it does. Here's everything you need to find us, reach us, and stop by.</p>
-    <div class="cta"><a class="btn solid" href="tel:+15624342131">Call (562) 434-2131</a><a class="btn" href="#visit">Hours &amp; location</a></div>
+<div class="trim"></div>
+
+<nav><div class="wrap row">
+  <div class="brand">Regal <em>Tailoring</em> &amp; Dry Cleaning<small>· REDONDO AVE · LONG BEACH ·</small></div>
+  <div class="nlinks"><a href="#malena">Atelier</a><a href="#svc">Services</a><a href="#visit">Visit</a></div>
+  <a class="cta" href="tel:+15624342131">(562) 434-2131</a>
+</div></nav>
+
+<header class="hero"><div class="wrap"><div class="inner">
+  <div class="crest">❦</div>
+  <div class="pre">— Belmont Heights Atelier —</div>
+  <h1>An <em>old-world</em> tailor,<br>a few blocks from <em>the water</em>.</h1>
+  <p class="lede">A small atelier on Redondo Avenue — bespoke alterations, formal-wear tailoring, and dry cleaning for the garments you actually care about. By appointment whenever possible.</p>
+  <div class="crest-row">
+    <span>❦</span><b>Bespoke</b><span>·</span><b>Bridal</b><span>·</span><b>Formalwear</b><span>❦</span>
   </div>
-  <img class="hero-img" src="https://lh3.googleusercontent.com/place-photos/AJRVUZPVaKSygYf-TFh8ZCfhCYev0JtcIWkKRzD_KXNPEcZUs-d0i4QX_snqdREt5160RaPNPrlPePM9YqWIuTq65Ek6S6hajesp4bOwbUX4jTbJ-VcbIBSkOhMcFYl6GPjYqblAiq0wiXlOo00Jn80=s4800-w1284" alt="Regal Tailoring &amp; Regal Dry Cleaning">
+</div></div></header>
+
+<section class="malena" id="malena"><div class="wrap"><div class="grid">
+  <div class="photo">M</div>
+  <div>
+    <div class="pre">— Our Tailor —</div>
+    <h2>Malena's <em>hand</em>.</h2>
+    <p>Malena is the tailor regulars come for. She works with precision and patience — bridal alterations, suit takes, sleeve adjustments, and the kind of fine work most cleaners simply won't touch.</p>
+    <p>The shop is small. The work is detailed. The reward is a garment that fits like it was made for you.</p>
+    <div class="pull">
+      "I had the absolute pleasure of working with the remarkable tailor, Malena. She not only flawlessly altered my initial — exceptional skills and dedication."
+      <b>— Elizaveta · Google review</b>
+    </div>
+  </div>
 </div></div></section>
 
-<section class="section" id="services"><div class="wrap">
-  <div class="kick">Crisp, clean, on time</div>
-  <h2>What we do.</h2>
-  <div class="svcs"><div class="svc"><span class="snum">01</span><h3>Dry cleaning</h3></div><div class="svc"><span class="snum">02</span><h3>Wash &amp; fold</h3></div><div class="svc"><span class="snum">03</span><h3>Alterations &amp; repairs</h3></div><div class="svc"><span class="snum">04</span><h3>Specialty garments</h3></div></div>
-</div></section>
+<section class="svc" id="svc"><div class="wrap">
+  <div class="head">
+    <div class="pre">— The Book of Rates —</div>
+    <h2>Pricing, <em>plainly</em>.</h2>
+  </div>
+  <div class="ledger">
+    <h3>Tailoring</h3>
+    <div class="row"><div><div class="name">Pant Hem — Standard</div><div class="desc">Single or double, blind-stitched.</div></div><div class="price">$16</div></div>
+    <div class="row"><div><div class="name">Original Hem — Denim</div><div class="desc">Length retained, edge re-finished.</div></div><div class="price">$24</div></div>
+    <div class="row"><div><div class="name">Waist In / Out</div><div class="desc">Up to two inches each direction.</div></div><div class="price">$28</div></div>
+    <div class="row"><div><div class="name">Jacket Sleeve</div><div class="desc">With or without buttons; lining adjusted.</div></div><div class="price">$32</div></div>
+    <div class="row"><div><div class="name">Suit Fitting — Full</div><div class="desc">By appointment; multiple sessions.</div></div><div class="price">from $120</div></div>
+    <div class="row"><div><div class="name">Bridal Alterations</div><div class="desc">Consultation required.</div></div><div class="price">on request</div></div>
 
-<section class="section gal-sec"><div class="wrap"><div class="kick">A look inside</div><h2>The place itself.</h2><div class="gallery"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNcKk0-qx_kik6VJH8PBYYxhXmwtAjOc8_PQZo_9W4hEOX6dafgQ6FxEtWMgmFWo_EGYoGlaC4YPbo8pdIxLuexN9_NQhtf7Y1e7pEZ6NvT38142nFCqeVruUx4R3upJZXJiIlkltPrMp9eiQ=s4800-w960" alt="Regal Tailoring &amp; Regal Dry Cleaning" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMebnICplWUnxFaNtsgOsxkHe4pYmqxJr4pXX3FjfvfXTRhtaiOH_IySMoQYQ_yJ2ASsOOFRrM_Cy4Qs0gu0iZOTAooKR7kdVN2S95KkoogF3VV0lFRQheyuUrZWUrRW2LBalxKtJ9rJWdMpg=s4800-w1284" alt="Regal Tailoring &amp; Regal Dry Cleaning" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOEjPtHU4i82j6WN9NU_QUHErVSOuVrTQQBlgz5duzI_L3c2vm-VBc5SFugf74hC-GXHqjceavzcxUgI3IGkgyjkIcjOrLOzJrOdSpaCxEhHQ3MDYkA9xd0v2b-IGWioG8JhY4K7LvW57erUg=s4800-w1600" alt="Regal Tailoring &amp; Regal Dry Cleaning" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNtHIVhdoXvaSaASLhB3b3cXgtHnID1nv-jNVbaocR8GsFJeuPHZtdb3gIBWvFG8MyIyjtQbCI4bfU-vOePGIZDAJFeReuDdpLn79SajKB_j5_H0yOOtkqflkxrtO_Tg-G1pHga8UmbKs1LPto=s4800-w1600" alt="Regal Tailoring &amp; Regal Dry Cleaning" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMc7cA78gp3lk6uhISSGekEhDuiI5DgDwjzLPk9Nb17SAieFRdLMGNhG8VDe9_xbbCH4RKwS00yWQpEfzKCinv1kAp15n0OZlhCSLIlkqqjGQrG1kAOvDvExjfYxag_qJT02HO_D3MJarKhzA=s4800-w1600" alt="Regal Tailoring &amp; Regal Dry Cleaning" loading="lazy"></div></div></section>
-<section class="section"><div class="wrap"><div class="kick">In their words</div><h2>What people say.</h2><div class="quotes"><div class="q"><p>I had the absolute pleasure of working with the remarkable tailor, Malena, and I cannot express my gratitude enough for her exceptional skills and dedication. She not only flawlessly altered my initial second dress for my…</p><div class="who">— Elizaveta</div></div><div class="q"><p>Exceptional staff with extraordinary pricing. Backstory: I had a wrinkled necktie that needed to be straightened the next day. Thus, I came to this store and it was about to close in 10 mins. The lady manager accepted my order…</p><div class="who">— Adams L.</div></div></div></div></section>
-
-<section class="section" id="visit"><div class="wrap">
-  <div class="kick">Find us</div>
-  <h2>Visit Regal.</h2>
-  <div class="visit">
-    <div class="info">
-      <div class="contact-line"><a class="btn solid" href="tel:+15624342131">Call (562) 434-2131</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=371+Redondo+Ave+A,+Long+Beach,+CA+90814,+USA" target="_blank" rel="noopener">Get directions</a></div>
-      <div class="hrow"><span class="hd">Address</span><span class="ht">371 Redondo Ave A, Long Beach, CA 90814, USA</span></div>
-      <div class="hrow"><span class="hd">Phone</span><span class="ht"><a href="tel:+15624342131">(562) 434-2131</a></span></div>
-      <div class="hrow"><span class="hd">Monday</span><span class="ht">Closed</span></div><div class="hrow"><span class="hd">Tuesday</span><span class="ht">11:00 AM – 5:00 PM</span></div><div class="hrow"><span class="hd">Wednesday</span><span class="ht">11:00 AM – 5:00 PM</span></div><div class="hrow"><span class="hd">Thursday</span><span class="ht">11:00 AM – 5:00 PM</span></div><div class="hrow"><span class="hd">Friday</span><span class="ht">11:00 AM – 5:00 PM</span></div><div class="hrow"><span class="hd">Saturday</span><span class="ht">10:00 AM – 2:00 PM</span></div><div class="hrow"><span class="hd">Sunday</span><span class="ht">Closed</span></div>
-    </div>
-    <iframe loading="lazy" src="https://www.google.com/maps?q=371+Redondo+Ave+A,+Long+Beach,+CA+90814,+USA&output=embed" title="Map to Regal Tailoring &amp; Regal Dry Cleaning"></iframe>
+    <h3 style="margin-top:36px">Dry Cleaning</h3>
+    <div class="row"><div><div class="name">Pressed Shirt</div><div class="desc">Hung or boxed.</div></div><div class="price">$5</div></div>
+    <div class="row"><div><div class="name">Trousers</div><div class="desc">Crease as requested.</div></div><div class="price">$9</div></div>
+    <div class="row"><div><div class="name">Two-Piece Suit</div><div class="desc">Full service.</div></div><div class="price">$20</div></div>
+    <div class="row"><div><div class="name">Cocktail Dress</div><div class="desc">Up to knee-length.</div></div><div class="price">from $16</div></div>
+    <div class="row"><div><div class="name">Evening Gown</div><div class="desc">Specialty handling, full-length.</div></div><div class="price">from $40</div></div>
   </div>
 </div></section>
 
-<footer><div class="wrap">
-  <div class="fbrand">Regal Tailoring &amp; Regal Dry Cleaning</div>
-  <div style="font-size:13px;opacity:.7;margin-top:4px">371 Redondo Ave A, Long Beach, CA 90814, USA</div>
+<section class="praise"><div class="wrap">
+  <div class="head">
+    <div class="pre">— Testimony —</div>
+    <h2>From Malena's <em>clients</em>.</h2>
+  </div>
+  <div class="pgrid">
+    <div class="pcard">
+      <div class="star">★ ★ ★ ★ ★</div>
+      <div class="t">"I had the absolute pleasure of working with the remarkable tailor, Malena, and I cannot express my gratitude enough for her exceptional skills and dedication."</div>
+      <div class="who">— Elizaveta</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="visit" id="visit"><div class="wrap"><div class="grid">
+  <div>
+    <div class="pre">— Visit the Atelier —</div>
+    <h2>By <em>appointment</em>.</h2>
+    <div class="det">
+      <div class="row"><b>Address</b><span>371 Redondo Ave, Suite A<br>Long Beach, CA 90814</span></div>
+      <div class="row"><b>Telephone</b><a href="tel:+15624342131">(562) 434-2131</a></div>
+      <div class="row"><b>Tailor</b><span>Malena — by appointment</span></div>
+      <div class="row"><b>Closed</b><span>Sundays & Mondays</span></div>
+    </div>
+  </div>
+  <div class="hourcard">
+    <h3>Hours</h3>
+    <div class="hr cl"><b>Monday</b><span>closed</span></div>
+    <div class="hr"><b>Tuesday</b><span>11 AM – 5 PM</span></div>
+    <div class="hr"><b>Wednesday</b><span>11 AM – 5 PM</span></div>
+    <div class="hr"><b>Thursday</b><span>11 AM – 5 PM</span></div>
+    <div class="hr"><b>Friday</b><span>11 AM – 5 PM</span></div>
+    <div class="hr"><b>Saturday</b><span>10 AM – 2 PM</span></div>
+    <div class="hr cl"><b>Sunday</b><span>closed</span></div>
+  </div>
+</div></div></section>
+
+<footer>
+  <div class="b">Regal <em>Tailoring</em><small>· REDONDO AVE · LONG BEACH ·</small></div>
+  <div class="det">371 Redondo Ave, Suite A · <a href="tel:+15624342131">(562) 434-2131</a></div>
   <div class="credit">Mockup designed by LJ Sites — interested in making this yours? <a href="mailto:LJsites.llc@gmail.com">LJsites.llc@gmail.com</a></div>
-</div></footer>
+</footer>
+
+<div class="trim"></div>
+
 </body></html>
